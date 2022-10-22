@@ -60,7 +60,7 @@ plot(t, x, '.b', MarkerSize=16)
 title(['I_d_i_f_f=' num2str(I_diff_trap) '  ,  I_r_e_a_l=' num2str(I_real) ',  I_r_e_c_t=' num2str(I_trap)])
 xlabel('t(s)')
 ylabel('x(t)')
-line(0,1)
+
 for i=1 : 1 : length(t)
     line([t(i) t(i)], [0 x(i)], 'Color', 'blue', 'LineStyle', '--')
     if(i ~= length(t))
